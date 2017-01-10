@@ -1,0 +1,15 @@
+{
+  "name": "api-workshop",
+  "version": "1.0.0",
+  "description": "Uma api simples de um banco para exemplo de ferramentas de teste",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "José Renan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
