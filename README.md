@@ -23,13 +23,17 @@ $ npm start
         ```
 * [POST] /saque
     * Saca um determinado valor da conta de um determinado correntista. Segue abaixo um exemplo de body da requisição e de retorno.
+    
         Request:
         ```JSON
+        
         {
             "correntista": "Nome do correntista",
             "valor": 10.0 //Exemplo de valor em double a ser sacado
         }
+        
         ```
+        
         Response:
         ```JSON
         {
@@ -39,6 +43,7 @@ $ npm start
         ```
 * [POST] /deposito
     * Deposita um determinado valor da conta de um determinado correntista. Segue abaixo um exemplo de body da requisição e de retorno.
+        
         Request:
         ```JSON
         {
@@ -46,6 +51,7 @@ $ npm start
             "valor": 10.0 //Valor em double a ser sacado
         }
         ```
+        
         Response:
         ```JSON
         {
@@ -55,6 +61,7 @@ $ npm start
         ```
 * [GET] /conta?correntista=[Nome do correntista]
     * Retorna a conta de um determinado correntista. Segue um exemplo de retorno.
+        
         Response:
         ```JSON
         {
@@ -62,8 +69,10 @@ $ npm start
             "saldo": 0.0 //Saldo atual após depósito
         }
         ```
+        
 * [GET] /contas
     * Retorna as contas de todos os correntistas cadastrados. Segue abaixo um exemplo de retorno.
+        
         Response:
         ```JSON
         [{
