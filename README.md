@@ -3,6 +3,8 @@ Exemplo de sistema de contas bancárias para testes no Workshop da QA no embedde
 
 ### Instalação
 ```sh
+$ git clone https://github.com/JoseRenan/workshop-api.git
+$ cd workshop-api
 $ npm install
 $ npm start
 ```
