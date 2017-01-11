@@ -4,12 +4,16 @@
   "description": "Uma api simples de um banco para exemplo de ferramentas de teste",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "jasmine-node tests-frisby/ --junitreport"
   },
   "author": "José Renan",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "frisby": "^0.8.5"
   }
 }

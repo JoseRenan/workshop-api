@@ -8,9 +8,15 @@ $ cd workshop-api
 $ npm install
 $ npm start
 ```
+
+### Execução testes frisby
+```sh
+$ npm test
+```
+
 ### Endpoints
 * [POST] /criar-conta
-    * Cria uma conta para um determinado correntista e armazena no sistema. Retorna um objeto representando a conta do              correntista criado. Segue abaixo um exemplo de body da requisição e de retorno.
+    * Cria uma conta para um determinado correntista e armazena no sistema. Retorna um objeto representando a conta do              correntista criado. Segue abaixo um exemplo de body da requisição e de retorno. OBS: Não são aceitas requisições com nomes de correntistas nulos ou já criados.
     
         Request:
         ```JSON
@@ -24,7 +30,8 @@ $ npm start
         }
         ```
 * [POST] /saque
-    * Saca um determinado valor da conta de um determinado correntista. Segue abaixo um exemplo de body da requisição e de retorno.
+    * Saca um determinado valor da conta de um determinado correntista. Segue abaixo um exemplo de body da requisição e de retorno. OBS: Para realizar um saque, é necessário ter saldo
+    suficiente (Veja o endpoint /deposito).
     
         Request:
         ```JSON
